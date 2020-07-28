@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+}
+.mobile{
+    display: none;
+}
+body{
+    background-color:whitesmoke ;
+}
+.header{
+    width: 100%;
+    background-color: rgb(115, 160, 245);
+    height: 25vh;
+    border-bottom: solid black 1px;
+}
+.header h3{
+    font-size: 3.8em;
+    transform: translate(-50%,-50%);
+    color: tomato;
+    position: absolute;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    left: 50%;
+    top: 8%;
+}
+
+.header strong{
+    font-size:1.2em;
+    transform: translate(-50%,-50%);
+    color:white;
+    background-color: rgb(11, 11, 90);
+    padding:1mm .5cm 1mm .5cm;
+    position: absolute;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    left: 50%;
+    top: 15%;
+    font-family:'Barlow Semi Condensed', sans-serif; ;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(37, 121, 231);
+    left: 50%;
+    top: 25%;
+    text-align: center;
+    padding: 0.5%;
+}
+.nav-link{
+    width: 25%;
+    padding:0.2cm 0.5cm 0.2cm 0.5cm;
+    text-align: center;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.header a:hover{
+    color: yellow;
+}
+.brand-img{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 3.5cm;
+    height: 3cm;
+    left: 2.5cm;
+    top: 2cm;
+}
+.side-left-nav{
+    position: absolute;
+    left: 1%;
+    top:30%;
+    max-width: 23%;
+    min-width: 23%;
+
+}
+.side-left-nav h3{
+    text-align: center;
+    background-color: rgb(68, 184, 238);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 2mm 0 2mm 0mm;
+    border: black 1px;
+    border-bottom:black 1px solid ;
+   
+}
+.side-left-nav a{
+    text-decoration: none;
+    margin: 3mm ;
+}
+.ref2:hover, .contact-us a:hover{
+    color:white;
+    background-color: rgb(33, 118, 245);
+}
+.news-feeds{
+    font-size:1.1em ;
+    background-color: white;
+    margin-bottom: 1mm;
+    border: solid rgb(63, 62, 62) 1px;
+}
+
+.news-feeds a{
+    color: rgba(14, 13, 13, 0.747);
+}
+.news-feeds a:hover{
+    color: blue;
+}
+.ref2{
+    background-color:rgba(48, 113, 235, 0.836) ;
+    color: white;
+    border-bottom: solid rgb(255, 255, 255) 1px;
+}
+
+.contact-us{
+    background-color: white;
+    text-align: center;
+    border: solid rgb(63, 62, 62) 1px;
+}
+.contact-us h3{
+    font-size: 1.5em;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.contact-us a{
+    font-size: 1.6em;
+    color:white
+}
+
+
+
+
+
+                                                /* center bar */
+
+.center-nav{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    display: grid;
+    padding: 0.3em;
+    grid-template-columns: auto auto;
+    background-color: white;
+    border-radius: 30px;
+    border: solid black 1px;
+}   
+h1{
+
+    position: absolute;
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%,-50%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    z-index: 1;
+}          
+.center-nav a{
+    text-decoration: none;
+    padding: 1em;
+    border: solid 1px;
+    text-align: center;
+    width: auto;
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+
+}    
+.home{
+    color: white;
+    font-size:1.2em ;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    text-align: center;
+} 
+   
+.home a{
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+.home a:hover{
+    color:yellow;
+}
+
+.hom-tel{
+    color: white;
+    background-color: rgb(236, 87, 49);
+}
+
+.book-app{
+    color: white;
+    background-color: rgb(26, 202, 105);
+}
+.book-lab{
+    background-color: rgb(22, 115, 238);
+    color: white;
+}
+.doct-at-door{
+    background-color: rgb(204, 77, 230);
+    color: white;
+}
+.book-app,.book-lab,.doct-at-door,.hom-tel,.yoga,.gym, .dauw{
+    border-radius: 20px;
+    font-size: 1.3em;
+    font-family: monospace;
+}
+
+.book-app:hover,.book-lab:hover,.doct-at-door:hover,.hom-tel:hover{
+    opacity: 0.7;
+}
+
+
+
+/* side right navbar */
+
+.side-right-nav{
+    position: absolute;
+    right: 1%;
+    width: 22%;
+    top: 30%;
+    text-align: center;
+    background-color: white;
+    border: solid black 1px;
+
+}
+
+.side-right-nav a{
+    text-decoration: none;
+    color:black;
+    
+
+}
+.ref{
+    width: 100%;
+    color:black;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    font-size: 0.9em;
+
+    font-family: 'Barlow Semi Condensed', sans-serif;;
+}
+.ref:hover, .side-right-nav a:hover{
+    color: white;
+    background-color: teal;
+}
+
+
+
+
+/* htc.html styling  */
+.allform{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 120%;
+    width: 70%;
+    padding:0.5cm;
+    background-color: wheat;
+    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.589), 0 1px 4px rgba(255, 255, 255, 0.24);;
+}
+.zoom_form{
+    background-color: white;
+    text-align: center;
+    padding: 0.5cm;
+    width: 60%;
+    margin-left: 19%;
+}
+.zoom_form img{
+    width: 4em;
+}
+.zoom_form input,select,label{
+    font-size: 1.4em;
+    border-top:0 ;
+    border-bottom: solid black 1px;
+    border-left: 0;
+    border-right: 0;
+    margin: 1em 0 1em 0;
+    width: 100%;
+}
+.zoom_form button{
+    color: white;
+    background-color: rgb(42, 153, 243);
+    padding: 0.2cm;
+    font-size: 1.2em;
+    border:solid 1px;
+    border-radius: 10px;
+}
+.zoom_form button:hover{
+    opacity: 0.7;
+}
+
+.allform1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 140%;
+    width: 70%;
+    padding:0.5cm;
+    background-color: wheat;
+    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.589), 0 1px 4px rgba(255, 255, 255, 0.24);;
+}
+
+.appointment{
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 10%;
+    top: 30%;
+    font-size: 3em;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

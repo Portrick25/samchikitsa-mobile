@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samchikitsa</title>
+</head>
+<body>
+    <div class="header">
+        <img class="brand-img" src="logo1.png" alt="logo">
+        <h3> SAMCHIKITSA </h3>
+        <strong>Serving Complete Health & Well Being</strong>
+        <nav>
+            <a class="nav-link" href="htc.html">HOMEOPATHIC TELECONSULTATION</a>
+            <a class="nav-link" href="BOA.html" >BOOK A OFFLINE APPOINTMENT</a>
+            <a class="nav-link" href="" >BOOK A LAB TEST</a>
+            <a class="nav-link" href="dyds.html" >DOCTORS AT YOUR DOOR STEP</a>
+        </nav>
+        <a href=""></a>
+    </div>
+    <div class="home">
+        <a class="fa fa-home" href="main.html"><span>  |  </span> home</a><br>
+        <a href="upcoming">UPCOMING SERVICES</a>
+    
+    </div>
+    <span class="appointment">BOOK AN APPOINTMENT</span>
+    <div class="allform">
+    <div class="zoom_form">
+        <form action="" method="post" id="offlineAppointment">
+            <input type="text" placeholder="Enter Your Name" id="" name="name" required><br>
+            <input type="number" placeholder="Enter Your Phone Number" name="phone" id="" required><br>
+            <input type="email" placeholder="Enter Your Email ID" name="email" id="" required><br>
+            <input type="text" placeholder="Enter Your Address" name="address" id="" required><br>
+            <select name="city" id="city" required>
+                <option value="none" >LOCATION</option>
+                <option value="noida">NOIDA</option>
+                <option value="delhi">NEW DELHI</option>
+                <option value="graeter noida">GREATER NOIDA</option>
+                <option value="ghaziabad">GHAZIABAD</option>
+                <option value="gg">GURUGRAM</option>
+            </select><br>
+            <label for="date">ENTER THE DATE OF YOUR AVAILABLITY</label><br>
+            <input type="date" name="date" id=""><br>
+            <label for="time">ENTER THE TIME OF YOUR AVAILABLITY  </label><br>
+            <input type="time" name="time" id=""><br>
+            <button type="submit">Submit</button><br>
+        </form>
+
+    </div>
+    <br>
+  
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyC1SSuF6ibJw6vpzbb38WDVBl2f4EWXYJY",
+        authDomain: "samchikitsa-f6d9b.firebaseapp.com",
+        databaseURL: "https://samchikitsa-f6d9b.firebaseio.com",
+        projectId: "samchikitsa-f6d9b",
+        storageBucket: "samchikitsa-f6d9b.appspot.com",
+        messagingSenderId: "196670220970",
+        appId: "1:196670220970:web:201a0e8a9cce3cefb27ed3",
+        measurementId: "G-TBY5QYXRB6"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const db = firebase.firestore()
+    </script>
+    <script src="script/myapp3.js">
+    </script>
+    </body>
+    </html>
