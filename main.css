@@ -1,642 +1,310 @@
 *{
     margin: 0;
 }
-@media only screen and (max-width: 450px){
-
-.PC{
+.mobile{
     display: none;
 }
-.mobile{
-    display: block;
-}
-
 body{
-    width: 100vw;
-    height: 100vh;
+    background-color:whitesmoke ;
 }
-.mobile-bg{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    opacity:0.6 ;
-    z-index:-1 ;
-    
+.header{
+    width: 100%;
+    background-color: rgb(115, 160, 245);
+    height: 25vh;
+    border-bottom: solid black 1px;
 }
-.nav-bg{
-    background-color: teal;
-    position: absolute;
-    width: 100vw;
-    height: 18vh;
-    border-bottom: solid white 1px;
-    z-index: 0;
-
-}
-
-#menubar-content{
-    display:none;
-}
-
-.mobile-logo{
-    opacity: 1;
-    z-index: 1;
-    position: absolute;
-    width: 2cm;
-    padding: 1em;
-    z-index: 1;
-}
-
-
-.heading{
-    font-size: 1.7em;
+.header h3{
+    font-size: 3.8em;
     transform: translate(-50%,-50%);
     color: tomato;
     position: absolute;
     font-family: 'Barlow Semi Condensed', sans-serif;
     left: 50%;
-    top: 7vh;z-index: 1;
+    top: 8%;
 }
 
-.quote{
-    font-size:0.6em;
+.header strong{
+    font-size:1.2em;
     transform: translate(-50%,-50%);
     color:white;
     background-color: rgb(11, 11, 90);
-    padding:1mm .1cm 1mm .1cm;
+    padding:1mm .5cm 1mm .5cm;
     position: absolute;
     font-family: 'Barlow Semi Condensed', sans-serif;
     left: 50%;
-    top: 11vh;
+    top: 15%;
     font-family:'Barlow Semi Condensed', sans-serif; ;
-    z-index: 1;
 }
 
-#menubar{
-    color: white;
+nav{
     position: absolute;
-    font-size: 1.6em;
-    top: 3vh;
-    right: 0.2%;
-    background-color: transparent;
-    border: solid white 1px;
-    margin: 1em;
-    border-radius: 4px;
-}
-
-.services-heading{
-    position: absolute;
-    text-transform: uppercase;
-    color: white;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(37, 121, 231);
+    left: 50%;
+    top: 25%;
     text-align: center;
-    top: 20vh;
-    width: 96%;
-    left: 2%;
-    font-family: 'Barlow Semi Condensed', sans-serif ;
-    z-index: auto;
+    padding: 0.5%;
 }
-
-.services-mobile{
-    z-index: 0;
+.nav-link{
+    width: 25%;
+    padding:0.2cm 0.5cm 0.2cm 0.5cm;
+    text-align: center;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.header a:hover{
+    color: yellow;
+}
+.brand-img{
     position: absolute;
     transform: translate(-50%,-50%);
-    left: 50%;
-    top: 70%;
-    display: grid;
-    grid-template-columns: auto;
-    text-align: center;
+    width: 3.5cm;
+    height: 3cm;
+    left: 2.5cm;
+    top: 2cm;
 }
-.services-mobile a{
+.side-left-nav{
+    position: absolute;
+    left: 1%;
+    top:30%;
+    max-width: 23%;
+    min-width: 23%;
+
+}
+.side-left-nav h3{
+    text-align: center;
+    background-color: rgb(68, 184, 238);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 2mm 0 2mm 0mm;
+    border: black 1px;
+    border-bottom:black 1px solid ;
+   
+}
+.side-left-nav a{
+    text-decoration: none;
+    margin: 3mm ;
+}
+.ref2:hover, .contact-us a:hover{
+    color:white;
+    background-color: rgb(33, 118, 245);
+}
+.news-feeds{
+    font-size:1.1em ;
+    background-color: white;
+    margin-bottom: 1mm;
+    border: solid rgb(63, 62, 62) 1px;
+}
+
+.news-feeds a{
+    color: rgba(14, 13, 13, 0.747);
+}
+.news-feeds a:hover{
+    color: blue;
+}
+.ref2{
+    background-color:rgba(48, 113, 235, 0.836) ;
+    color: white;
+    border-bottom: solid rgb(255, 255, 255) 1px;
+}
+
+.contact-us{
+    background-color: white;
+    text-align: center;
+    border: solid rgb(63, 62, 62) 1px;
+}
+.contact-us h3{
+    font-size: 1.5em;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.contact-us a{
+    font-size: 1.6em;
+    color:white
+}
+
+
+
+
+
+                                                /* center bar */
+
+.center-nav{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    display: grid;
+    padding: 0.3em;
+    grid-template-columns: auto auto;
+    background-color: white;
+    border-radius: 30px;
+    border: solid black 1px;
+}   
+h1{
+
+    position: absolute;
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%,-50%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    z-index: 1;
+}          
+.center-nav a{
+    text-decoration: none;
+    padding: 1em;
+    border: solid 1px;
+    text-align: center;
+    width: auto;
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+
+}    
+.home{
+    color: white;
+    font-size:1.2em ;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    text-align: center;
+} 
+   
+.home a{
     text-decoration: none;
     color: white;
-    font-size: 1.2em;
+    padding: 1em;
+}
+.home a:hover{
+    color:yellow;
+}
+
+.hom-tel{
+    color: white;
+    background-color: rgb(236, 87, 49);
+}
+
+.book-app{
+    color: white;
+    background-color: rgb(26, 202, 105);
+}
+.book-lab{
+    background-color: rgb(22, 115, 238);
+    color: white;
+}
+.doct-at-door{
+    background-color: rgb(204, 77, 230);
+    color: white;
+}
+.book-app,.book-lab,.doct-at-door,.hom-tel,.yoga,.gym, .dauw{
+    border-radius: 20px;
+    font-size: 1.3em;
     font-family: monospace;
 }
 
-.hom-tel-mobile, .book-app-mobile, .dauw-mobile, .book-lab-mobile, .doct-at-door-mobile, .yoga-mobile, .gym-mobile{
-    width: 80vw;
-    border: solid white 1px;
-    padding: 1em 0 1em 0em;
-    margin: 1em;
-
+.book-app:hover,.book-lab:hover,.doct-at-door:hover,.hom-tel:hover{
+    opacity: 0.7;
 }
 
-.dropdown-content{
+
+
+/* side right navbar */
+
+.side-right-nav{
     position: absolute;
-    top: 18vh;
-    width: 100%;
-    background-color:teal ;
-    opacity: 0.6;    
-}
-.dc-style{
-    border: solid white 1px;
-    width: 100%;
-    background-color: transparent;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    right: 1%;
+    width: 22%;
+    top: 30%;
     text-align: center;
-    
+    background-color: white;
+    border: solid black 1px;
+
 }
-.dc-style a{
+
+.side-right-nav a{
     text-decoration: none;
+    color:black;
+    
+
+}
+.ref{
+    width: 100%;
+    color:black;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    font-size: 0.9em;
+
+    font-family: 'Barlow Semi Condensed', sans-serif;;
+}
+.ref:hover, .side-right-nav a:hover{
     color: white;
-    font-size: 1.4em;
-}
-.dropdown-content button{
-    color: white;
-    font-size: 1.2em;
-    text-transform: capitalize;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-
-}
-#contact-menubar-content{
-    display: none;
+    background-color: teal;
 }
 
 
-/* for htc.html */
 
+
+/* htc.html styling  */
 .allform{
     position: absolute;
-    top: 100%;
-    width: 98vw;
-    padding: 0;
-    background-color: transparent;
-}
-.zoom_form{
-    width: 90vw;
-    padding: 2%;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    margin-left: 2%;
-    margin-top:1em ;
-    margin-bottom: 0.5em;
-    border-radius: 20px;
-}
-.allform h2,.allform1 h2{
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.allform1{
-    position: absolute;
-    top: 125%;
-    width: 98vw;
-    padding: 0;
-    background-color: transparent;
-}
-.allform1 label, .allform2 label{
-    text-decoration: none;
-    font-size: 1em;
-}
-.allform2{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 80%;
-    left: 50%;
-    width: 98vw;
-    padding: 0;
-    background-color: transparent;
-}
-.allform2 h2{
-    position: absolute;
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    top: -10%;
-    width: 96%;
-    left: 2%;
-    font-family: 'Barlow Semi Condensed', sans-serif ;
-    z-index: auto;
-}
-}
-
-
-@media only screen and (min-width: 450px) {
-
-.PC{
-    display: none;
-}
-.mobile{
-    display: block;
-}
-
-body{
-    width: 100vw;
-    height: 100vh;
-}
-.mobile-bg{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    opacity:0.6 ;
-    z-index:-1 ;
-    
-}
-.nav-bg{
-    background-color: teal;
-    position: absolute;
-    width: 100vw;
-    height: 30vh;
-    border-bottom: solid white 1px;
-    z-index: 0;
-
-}
-
-#menubar-content{
-    display:none;
-}
-
-.mobile-logo{
-    opacity: 1;
-    z-index: 1;
-    position: absolute;
-    width: 2cm;
-    padding: 1em;
-    z-index: 1;
-}
-
-
-.heading{
-    font-size: 2.6em;
-    transform: translate(-50%,-50%);
-    color: tomato;
-    position: absolute;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    left: 50%;
-    top: 10vh;z-index: 1;
-}
-
-.quote{
-    font-size:0.9em;
-    transform: translate(-50%,-50%);
-    color:white;
-    background-color: rgb(11, 11, 90);
-    padding:1mm .1cm 1mm .1cm;
-    position: absolute;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    left: 50%;
-    top: 20vh;
-    font-family:'Barlow Semi Condensed', sans-serif; ;
-    z-index: 1;
-}
-
-#menubar{
-    color: white;
-    position: absolute;
-    font-size: 1.6em;
-    top: 3vh;
-    right: 0.2%;
-    background-color: transparent;
-    border: solid white 1px;
-    margin: 1em;
-    border-radius: 4px;
-}
-
-.services-heading{
-    position: absolute;
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    top: 40vh;
-    width: 96%;
-    left: 2%;
-    font-family: 'Barlow Semi Condensed', sans-serif ;
-    z-index: auto;
-}
-
-.services-mobile{
-    z-index: 0;
-    position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
-    top: 130%;
-    display: grid;
-    grid-template-columns: auto;
-    text-align: center;
-}
-.services-mobile a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    font-family: monospace;
-}
-
-.hom-tel-mobile, .book-app-mobile, .dauw-mobile, .book-lab-mobile, .doct-at-door-mobile, .yoga-mobile, .gym-mobile{
-    width: 80vw;
-    border: solid white 1px;
-    padding: 1em 0 1em 0em;
-    margin: 1em;
-
-}
-
-.dropdown-content{
-    position: absolute;
-    top: 30vh;
-    right: 0.001%;
+    top: 120%;
     width: 70%;
-    background-color:teal ;
-    opacity: 0.6;    
-}
-.dc-style{
-    border: solid white 1px;
-    width: 100%;
-    background-color: transparent;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: center;
-    
-}
-.dc-style a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.4em;
-}
-.dropdown-content button{
-    color: white;
-    font-size: 1.2em;
-    text-transform: capitalize;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-
-}
-#contact-menubar-content{
-    display: none;
-}
-
-
-/* for htc.html */
-
-.allform{
-    position: absolute;
-    top: 190%;
-    width: 98vw;
-    padding: 0;
-    background-color: transparent;
+    padding:0.5cm;
+    background-color: wheat;
+    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.589), 0 1px 4px rgba(255, 255, 255, 0.24);;
 }
 .zoom_form{
-    width: 90vw;
-    padding: 2%;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     text-align: center;
-    margin-left: 2%;
-    margin-top:1em ;
-    margin-bottom: 0.5em;
-    border-radius: 20px;
+    padding: 0.5cm;
+    width: 60%;
+    margin-left: 19%;
 }
-.allform h2,.allform1 h2{
+.zoom_form img{
+    width: 4em;
+}
+.zoom_form input,select,label{
+    font-size: 1.4em;
+    border-top:0 ;
+    border-bottom: solid black 1px;
+    border-left: 0;
+    border-right: 0;
+    margin: 1em 0 1em 0;
+    width: 100%;
+}
+.zoom_form button{
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(42, 153, 243);
+    padding: 0.2cm;
+    font-size: 1.2em;
+    border:solid 1px;
+    border-radius: 10px;
 }
+.zoom_form button:hover{
+    opacity: 0.7;
+}
+
 .allform1{
     position: absolute;
-    top: 220%;
-    width: 98vw;
-    padding: 0;
-    background-color: transparent;
-}
-.allform1 label, .allform2 label{
-    text-decoration: none;
-    font-size: 1em;
-}
-.allform2{
-    position: absolute;
     transform: translate(-50%,-50%);
-    top: 150%;
     left: 50%;
-    width: 98vw;
-    padding: 0;
-    background-color: transparent;
+    top: 140%;
+    width: 70%;
+    padding:0.5cm;
+    background-color: wheat;
+    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.589), 0 1px 4px rgba(255, 255, 255, 0.24);;
 }
-.allform2 h2{
+
+.appointment{
     position: absolute;
-    text-transform: uppercase;
-    color: white;
+    width: 80%;
     text-align: center;
-    top: -10%;
-    width: 96%;
-    left: 2%;
-    font-family: 'Barlow Semi Condensed', sans-serif ;
-    z-index: auto;
+    left: 10%;
+    top: 30%;
+    font-size: 3em;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-}
-
-
-@media only screen and (min-width: 825px) {
-
-    .PC{
-        display: none;
-    }
-    .mobile{
-        display: block;
-    }
-    
-    body{
-        width: 100vw;
-        height: 100vh;
-    }
-    .mobile-bg{
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        opacity:0.7  ;
-        z-index:-1 ;
-        
-    }
-    .nav-bg{
-        background-color: teal;
-        position: absolute;
-        width: 100vw;
-        height: 30vh;
-        border-bottom: solid white 1px;
-    
-    }
-    
-    #menubar-content{
-        display:none;
-    }
-    
-    .mobile-logo{
-        opacity: 1;
-        z-index: 1;
-        position: absolute;
-        width: 4cm;
-        padding: 1em;
-        z-index: 1;
-    }
-    
-    
-    .heading{
-        font-size: 4em;
-        transform: translate(-50%,-50%);
-        color: tomato;
-        position: absolute;
-        font-family: 'Barlow Semi Condensed', sans-serif;
-        left: 50%;
-        top: 12.5vh;z-index: 1;
-    }
-    
-    .quote{
-        font-size:1.45em;
-        transform: translate(-50%,-50%);
-        color:white;
-        background-color: rgb(11, 11, 90);
-        padding:1mm .1cm 1mm .1cm;
-        position: absolute;
-        font-family: 'Barlow Semi Condensed', sans-serif;
-        left: 50%;
-        top: 20vh;
-        font-family:'Barlow Semi Condensed', sans-serif; ;
-        z-index: 1;
-    }
-    
-    #menubar{
-        color: white;
-        position: absolute;
-        font-size: 4em;
-        top: 0.1vh;
-        right: 0.2%;
-        background-color: transparent;
-        border: solid white 1px;
-        margin: 1em;
-        border-radius: 10px;
-    }
-    
-    .services-heading{
-        position: absolute;
-        text-transform: uppercase;
-        color: white;
-        text-align: center;
-        top: 35vh;
-        width: 96%;
-        left: 2%;
-        font-size: 3em;
-        font-family: 'Barlow Semi Condensed', sans-serif ;
-        z-index: auto;
-    }
-    
-    .services-mobile{
-        z-index: 0;
-        position: absolute;
-        transform: translate(-50%,-50%);
-        left: 50%;
-        top: 95%;
-        display: grid;
-        grid-template-columns: auto auto;
-        text-align: center;
-    }
-    .services-mobile a{
-        text-decoration: none;
-        color: white;
-        font-size: 2em;
-        font-family: monospace;
-    }
-    
-    .hom-tel-mobile, .book-app-mobile, .dauw-mobile, .book-lab-mobile, .doct-at-door-mobile, .yoga-mobile, .gym-mobile{
-        width: 40vw;
-        border: solid white 1px;
-        padding: 1em 0 1em 0em;
-        margin: 1em;
-    
-    }
-    .hom-tel-mobile:hover, .book-app-mobile:hover, .dauw-mobile:hover, .book-lab-mobile:hover, .doct-at-door-mobile:hover, .yoga-mobile:hover, .gym-mobile:hover{
-        background-color: rgba(0, 128, 128, 0.651);
-    }
-    
-    .dropdown-content{
-        position: absolute;
-        top: 30vh;
-        right: 0.001%;
-        width: 40%;
-        background-color:teal ;
-        opacity: 0.6;    
-    }
-    .dc-style{
-        border: solid white 1px;
-        width: 100%;
-        background-color: transparent;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        text-align: center;
-        
-    }
-    .dropdown-content button:hover{
-        background-color: rgb(0, 128, 128);
-        
-    }
-    .dc-style a{
-        text-decoration: none;
-        color: white;
-        font-size: 1.4em;
-    }
-    .dropdown-content button{
-        color: white;
-        font-size: 1.2em;
-        text-transform: capitalize;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    
-    }
-    #contact-menubar-content{
-        display: none;
-    }
-    
-    
-    /* for htc.html */
-    
-    .allform{
-        display: grid;
-        grid-template-columns: auto;
-        position: absolute;
-        top: 120%;
-        width: 70vw;
-        padding: 0;
-        background-color: transparent;
-    }
-    .zoom_form{
-        width: 60vw;
-        padding: 2%;
-        background-color: rgb(255, 255, 255);
-        text-align: center;
-        margin-left: 2%;
-        margin-top:1em ;
-        margin-bottom: 0.5em;
-        border-radius: 20px;
-    }
-    .allform h2,.allform1 h2{
-        color: white;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    .allform1{
-        position: absolute;
-        top: 140%;
-        width: 70vw;
-        padding: 0;
-        background-color: transparent;
-    }
-    .allform1 label, .allform2 label{
-        text-decoration: none;
-        font-size: 1em;
-    }
-    .allform2{
-        position: absolute;
-        transform: translate(-50%,-50%);
-        top: 100%;
-        left: 50%;
-        width: 70vw;
-        padding: 0;
-        background-color: transparent;
-    }
-    .allform2 h2{
-        position: absolute;
-        text-transform: uppercase;
-        font-size: 2.3em;
-        color: white;
-        text-align: center;
-        top: -10%;
-        width: 96%;
-        left: 2%;
-        font-family: 'Barlow Semi Condensed', sans-serif ;
-        z-index: auto;
-    }
-    
-    }
