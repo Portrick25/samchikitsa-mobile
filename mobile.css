@@ -196,5 +196,15 @@ body{
     padding: 0;
     background-color: transparent;
 }
-.
+.allform2 h2{
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    top: -10%;
+    width: 96%;
+    left: 2%;
+    font-family: 'Barlow Semi Condensed', sans-serif ;
+    z-index: auto;
+}
 }
