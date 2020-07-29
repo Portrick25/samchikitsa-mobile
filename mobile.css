@@ -296,7 +296,7 @@ body{
     text-transform: uppercase;
     color: white;
     text-align: center;
-    top: 40vh;
+    top: 38vh;
     width: 96%;
     left: 2%;
     font-family: 'Barlow Semi Condensed', sans-serif ;
@@ -308,7 +308,7 @@ body{
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
-    top: 130%;
+    top: 140%;
     display: grid;
     grid-template-columns: auto;
     text-align: center;
@@ -411,7 +411,7 @@ body{
     text-transform: uppercase;
     color: white;
     text-align: center;
-    top: -10%;
+    top: -6%;
     width: 96%;
     left: 2%;
     font-family: 'Barlow Semi Condensed', sans-serif ;
