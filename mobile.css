@@ -52,7 +52,7 @@ body{
     color: tomato;
     position: absolute;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    left: 55%;
+    left: 50%;
     top: 7vh;z-index: 1;
 }
 
@@ -64,7 +64,7 @@ body{
     padding:1mm .1cm 1mm .1cm;
     position: absolute;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    left: 55%;
+    left: 50%;
     top: 11vh;
     font-family:'Barlow Semi Condensed', sans-serif; ;
     z-index: 1;
